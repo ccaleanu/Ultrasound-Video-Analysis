@@ -1,9 +1,11 @@
 import matplotlib.pyplot as plt
 import cv2
 import os
+import re
 
-script_dir = os.path.dirname(__file__)
-file = script_dir + "./Samples/a"
+#script_dir = os.path.dirname(__file__)
+
+file = './Samples/UMF/a'
 # Configure VideoCapture class instance for using file input.
 capture = cv2.VideoCapture(file+'.avi')
 property_id = int(cv2.CAP_PROP_FRAME_COUNT)
